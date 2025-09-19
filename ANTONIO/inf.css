@@ -1,0 +1,68 @@
+.q1 {
+    background-color: #14197ef0;
+    height: 450px;
+    width: 850px;
+    padding: 25px;
+    border-radius: 15px; 
+    border-color: black;
+    border-width: 3px;    
+    border-style:groove; 
+     
+}
+.minha-linha {
+    border: none;
+    height: 2px;
+    background-color: #333; 
+    margin: 2px 0;
+    width: 1000px; 
+  }
+  .conterner{
+    background-color: #14197ef0;
+    height: 150px;
+    width: 325px;
+    border-radius: 15px;
+  }
+-------------------------------------
+.logo {
+    margin-right: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+   
+}
+
+.nav-item {
+    margin: 0 5px;
+   
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #058db6; /* Default background color, adjust per item */
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 14px;
+    
+}
+
+.nav-link:hover {
+    background-color: #d36b04;
+    transition:0.5s;
+}
+ 
+.footer {
+    background-color: #000000;
+ height: 100px;
+ color: whitesmoke;
+ display: flex;
+align-items: center; 
+justify-content: center;
+}
+
