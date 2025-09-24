@@ -10,3 +10,14 @@
     margin-right: 30px !important; /* Ajuste o valor conforme necessário */
 }
 
+
+footer {
+    background-color: rgb(0, 0, 0);
+}
+
+.footercontainer {
+    width: 97%;
+    padding: 70px 30px 10px;
+}
+
+
