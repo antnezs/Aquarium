@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .q1 {
     background-color: #14197ef0;
     height: 450px;
@@ -21,6 +24,13 @@
     height: 150px;
     width: 325px;
     border-radius: 15px;
+  }
+  .tela {
+    border-radius: 15px;
+    background-color: #14197ef0;
+    width: auto;
+    height: auto;
+    font-size: 18px;
   }
 -------------------------------------
 .logo {
