@@ -58,3 +58,11 @@ body {
     z-index: -1;
     object-fit: cover;
 }
+
+
+.card{
+    display:flex !important;
+    text-align: center !important;
+    justify-content: center !important;
+    place-items: center !important;
+}
