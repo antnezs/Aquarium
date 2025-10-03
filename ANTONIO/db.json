@@ -1,40 +1,39 @@
-{
-    "produtos": [
-      {
-        "id": 1,
-        "nome": "Camiseta Tech",
-        "descricao": "Camiseta confortável de algodão premium.",
-        "preco": 79.90,
-        "imagem": "https://picsum.photos/200?random=1"
-      },
-      {
-        "id": 2,
-        "nome": "Fone de Ouvido",
-        "descricao": "Headset bluetooth com cancelamento de ruído.",
-        "preco": 299.99,
-        "imagem": "https://picsum.photos/200?random=2"
-      },
-      {
-        "id": 3,
-        "nome": "Smartwatch Fit",
-        "descricao": "Relógio inteligente com monitor de batimentos.",
-        "preco": 499.00,
-        "imagem": "https://picsum.photos/200?random=3"
-      },
-      {
-        "id": 4,
-        "nome": "Mochila Urbana",
-        "descricao": "Mochila resistente à água com compartimento para notebook.",
-        "preco": 159.50,
-        "imagem": "https://picsum.photos/200?random=4"
-      },
-      {
-        "id": 5,
-        "nome": "Tênis Runner",
-        "descricao": "Tênis leve para corrida e atividades do dia a dia.",
-        "preco": 249.90,
-        "imagem": "https://picsum.photos/200?random=5"
-      }
-    ]
-  }
-  
+  {
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camiseta Tech",
+      "descricao": "Camiseta confortável de algodão premium.",
+      "preco": 79.90,
+      "imagem": "https://picsum.photos/200?random=1"
+    },
+    {
+      "id": 2,
+      "nome": "Fone de Ouvido",
+      "descricao": "Headset bluetooth com cancelamento de ruído.",
+      "preco": 299.99,
+      "imagem": "https://picsum.photos/200?random=2"
+    },
+    {
+      "id": 3,
+      "nome": "Smartwatch Fit",
+      "descricao": "Relógio inteligente com monitor de batimentos.",
+      "preco": 499.00,
+      "imagem": "https://picsum.photos/200?random=3"
+    },
+    {
+      "id": 4,
+      "nome": "Mochila Urbana",
+      "descricao": "Mochila resistente à água com compartimento para notebook.",
+      "preco": 159.50,
+      "imagem": "https://picsum.photos/200?random=4"
+    },
+    {
+      "id": 5,
+      "nome": "Tênis Runner",
+      "descricao": "Tênis leve para corrida e atividades do dia a dia.",
+      "preco": 249.90,
+      "imagem": "https://picsum.photos/200?random=5"
+    }
+  ]
+}
