@@ -76,3 +76,34 @@ align-items: center;
 justify-content: center;
 }
 
+.card {
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    display: inline-block;
+    background: #fff;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .btn:hover {
+    background: #0056b3;
+  }
