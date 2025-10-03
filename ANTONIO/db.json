@@ -1,39 +1,29 @@
-  {
+{
   "produtos": [
     {
       "id": 1,
-      "nome": "Camiseta Tech",
-      "descricao": "Camiseta confortável de algodão premium.",
-      "preco": 79.90,
-      "imagem": "https://picsum.photos/200?random=1"
+      "titulo": "sobre nós",
+      "descrição": "No Aquarium, criamos ambientes ecologicamente diversificados que replicam biomas globais, fomentando interações naturais entre espécies marinhas. Por exemplo, nosso tanque principal abriga mais de 500 espécies, incluindo tubarões, tartarugas marinhas e peixes tropicais, em um ecossistema autossustentável impulsionado por filtragem biológica avançada e ciclos de nutrientes reciclados. Essa abordagem minimiza intervenções externas, garantindo que os habitats permaneçam equilibrados e resilientes. Nossos especialistas em manutenção monitoram diariamente parâmetros como pH, salinidade e biodiversidade, utilizando tecnologias de ponta para preservar a integridade ecológica. Adquira seu ingresso para vivenciar essa inovação e contribuir para a conservação marinha."
     },
     {
       "id": 2,
-      "nome": "Fone de Ouvido",
-      "descricao": "Headset bluetooth com cancelamento de ruído.",
-      "preco": 299.99,
-      "imagem": "https://picsum.photos/200?random=2"
+      "titulo": "Fone de Ouvido",
+      "descrição": "Headset bluetooth com cancelamento de ruído."
     },
     {
       "id": 3,
-      "nome": "Smartwatch Fit",
-      "descricao": "Relógio inteligente com monitor de batimentos.",
-      "preco": 499.00,
-      "imagem": "https://picsum.photos/200?random=3"
+      "titulo": "Smartwatch Fit",
+      "descrição": "Relógio inteligente com monitor de batimentos."
     },
     {
       "id": 4,
-      "nome": "Mochila Urbana",
-      "descricao": "Mochila resistente à água com compartimento para notebook.",
-      "preco": 159.50,
-      "imagem": "https://picsum.photos/200?random=4"
+      "titulo": "Mochila Urbana",
+      "descrição": "Mochila resistente à água com compartimento para notebook."
     },
     {
       "id": 5,
-      "nome": "Tênis Runner",
-      "descricao": "Tênis leve para corrida e atividades do dia a dia.",
-      "preco": 249.90,
-      "imagem": "https://picsum.photos/200?random=5"
+      "titulo": "Tênis Runner",
+      "descrição": "Tênis leve para corrida e atividades do dia a dia."
     }
   ]
 }
