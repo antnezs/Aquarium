@@ -1,5 +1,5 @@
 {
-  "produtos": [
+  "interface": [
     {
       "id": 1,
       "titulo": "sobre nós",
@@ -19,11 +19,6 @@
       "id": 4,
       "titulo": "Mochila Urbana",
       "descrição": "Mochila resistente à água com compartimento para notebook."
-    },
-    {
-      "id": 5,
-      "titulo": "Tênis Runner",
-      "descrição": "Tênis leve para corrida e atividades do dia a dia."
     }
   ]
 }
