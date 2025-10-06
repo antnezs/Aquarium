@@ -5,26 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaRium - Melhor Vista do Mar</title>
     <link rel="stylesheet" href="ingressos.css">
+
+    <!-- navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <img src="assets/aquarium-logo.png" class="logo" width="140px" height="100px">   
+              <div class="itensdanav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Espécies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loja</a>
+              </li>
+            </ul>
+</div>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar -->
+       <!-- fontes -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Aquarium</h1>
-            <h2>Seu melhor mergulho estará aqui.</h2>
-            <p class="tagline">Experiências no Aquário</p>
-            <p>Adquira seu ingresso aqui:</p>
-        </header>
-        <div class="logo">
-            <img src="assetsb/aquarium-logo.png">
-            </div>
+  <br></br>
+
         <div class="content">
             <div class="main-content">
+              <div class="amelho">
                 <h3>A melhor vista do mar</h3>
-                <p></p>
-                
+            </div>
                 <div class="ticket-options">
                     <h3>Ingresso AquaRio</h3>
-                    
+                    <br></br>
                     <div class="ticket-option" onclick="selectTicket(this)">
                         <div class="ticket-title">Ingresso Individual</div>
                         <div class="ticket-price">R$ 80,00</div>
