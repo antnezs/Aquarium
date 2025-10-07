@@ -129,7 +129,7 @@ footer {
 }
 
 .fish-card {
-    flex: 1 1 200px;
+    flex: 1 1 250px;
     background: white;
     border-radius: 8px;
     overflow: hidden;
@@ -142,13 +142,20 @@ footer {
 }
 
 .fish-image {
-    height: 150px;
-    background-color: #0099bb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 3rem;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.fish-card:hover .fish-image img {
+    transform: scale(1.05);
 }
 
 .fish-info {
@@ -158,6 +165,11 @@ footer {
 .fish-info h3 {
     margin-bottom: 10px;
     color: #006680;
+}
+
+.fish-info p {
+    color: #666;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -177,5 +189,27 @@ footer {
     .nav-item {
         padding: 10px 15px;
         font-size: 0.9rem;
+    }
+    
+    .fish-card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .content, .sidebar {
+        padding: 20px;
+    }
+    
+    .fish-image {
+        height: 180px;
     }
 }
