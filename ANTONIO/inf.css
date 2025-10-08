@@ -19,19 +19,8 @@ html {
     margin: 2px 0;
     width: 1000px; 
   }
-  .conterner{
-    background-color: #14197ef0;
-    height: 150px;
-    width: 325px;
-    border-radius: 15px;
-  }
-  .tela {
-    border-radius: 15px;
-    background-color: #14197ef0;
-    width: auto;
-    height: auto;
-    font-size: 18px;
-  }
+
+
 -------------------------------------
 .logo {
     margin-right: 20px;
