@@ -1,64 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquarium</title>
+    <title>Aquário Marinho</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <img src="assets/aquarium-logo.png" class="logo" width="140px" height="100px">   
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Espécies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Loja</a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </nav>
 </head>
 <body>
-<br>  
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Bem-Vindo!</h5>
-    <p class="card-text">Conheça o Aquarium!  </p>
-    <a href="#" class="btn btn-primary"></a>
-  </div>
-</div>
-<br><br><br><br><br><br><br><br><br><br>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/aquarium-logo.png" class="logo" width="185" height="70" alt="Aquário Marinho Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Atrações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ingressos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Loja</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <video autoplay muted loop class="video-background">
-    <source src="assets/background.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos.
-  </video>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light bg-opacity-75 border-0 rounded-3 shadow">
+                    <img src="assets/restaurante.jpg" class="card-img-top rounded-top-3" alt="Restaurante Oceânico">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Restaurante Oceânico</h5>
+                        <p class="card-text">Desfrute de refeições deliciosas com vista para o aquário. Experimente pratos inspirados no mar!</p>
+                        <a href="#" class="btn btn-primary">Ver Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light bg-opacity-75 border-0 rounded-3 shadow">
+                    <img src="assets/aquarios.jpg" class="card-img-top rounded-top-3" alt="Exibição de Aquários">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Nossos Aquários</h5>
+                        <p class="card-text">Explore uma variedade de aquários com tubarões, peixes tropicais, corais e muito mais!</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light bg-opacity-75 border-0 rounded-3 shadow">
+                    <img src="assets/lojinha.webp" class="card-img-top rounded-top-3" alt="Lojinha de Cosméticos">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Lojinha de Cosméticos</h5>
+                        <p class="card-text">Descubra produtos exclusivos com ingredientes marinhos, como cremes e sabonetes de algas.</p>
+                        <a href="#" class="btn btn-primary">Visite a Loja</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <video autoplay muted loop class="video-background">
+        <source src="assets/background.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+
+    <footer class="bg-dark bg-opacity-50 text-white text-center py-4">
+        <p>&copy; 2025 - Aquário Marinho. Todos os direitos reservados.</p>
+        <p>Entre em contato: <a href="mailto:aquarium@gmail.com" class="text-white">aquarium@gmail.com</a></p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-white">Termos de Uso</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white">Política de Privacidade</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white">Sobre Nós</a></li>
+        </ul>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-<footer>
-	<p>&copy; 2025 - Todos os direitos reservados</p>
-	<p>Entre em contato pelo e-mail: aquarium@gmail.com</p>
-	<nav>
-		<ul>
-			<li><a href="#">Termos de uso</a></li>
-			<li><a href="#">Política de privacidade</a></li>
-			<li><a href="#">Sobre nós</a></li>
-		</ul>
-	</nav>
-</footer>
 </html>
