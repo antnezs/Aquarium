@@ -24,6 +24,7 @@ h2 {
 }
 
 h3 {
+    text-align: center;
     font-size: 1.4rem;
     color: #005a87;
     margin: 15px 0;
@@ -232,11 +233,6 @@ a:hover {
 .itensdanav{
     
 justify-content: center;
-}
-.amelho {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
 }
 
       
