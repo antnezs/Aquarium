@@ -9,6 +9,13 @@ body {
     color: #003366;
     font-family: sans-serif;
 }
+.navbar {
+    min-height: 90px !important;
+    padding: 10px 20px ; 
+}
+.navbar.bg-black{
+background-color: #0096ff82 !important;
+}
 .navbar-nav .nav-link {
     color: #1a3c6d !important;
     transition: color 0.3s;
@@ -18,11 +25,11 @@ body {
 }
 
 .logo {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     cursor: grab;
     position: absolute;
-    margin-top: -40px;
+    margin-top: -90px;
 }
 
 .container {
