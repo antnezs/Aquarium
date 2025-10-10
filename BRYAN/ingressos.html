@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaRium - Melhor Vista do Mar</title>
+    <title>AquaLugas - Ingressos</title>
     <link rel="stylesheet" href="ingressos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-       <!-- fontes -->
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-white">
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="assets/aquarium-logo.png" class="logo" width="200" height="200" alt="Aquário Marinho Logo">
+            <img src="assets/aquarium-logo.png" class="logo" id="movable-logo" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,68 +40,64 @@
     </div>
 </nav>
  <!-- navbar -->
-  <br></br>
-        <div class="content">
-            <div class="main-content">
-              <div class="amelho">
-                <h3>A melhor vista do mar</h3>
-            </div>
-                <div class="ticket-options">
-                    <h3>Ingresso AquaRio</h3>
-                    <br></br>
-                    <div class="ticket-option" onclick="selectTicket(this)">
-                        <div class="ticket-title">Ingresso Individual</div>
-                        <div class="ticket-price">R$ 80,00</div>
-                        <div class="ticket-description">Acesso a todas as áreas do aquário</div>
-                    </div>
-                    
-                    <div class="ticket-option" onclick="selectTicket(this)">
-                        <div class="ticket-title">Ingresso Família (4 pessoas)</div>
-                        <div class="ticket-price">R$ 240,00</div>
-                        <div class="ticket-description">Economize com o pacote família</div>
-                    </div>
-                    
-                    <div class="ticket-option" onclick="selectTicket(this)">
-                        <div class="ticket-title">Experiência Premium</div>
-                        <div class="ticket-price">R$ 150,00</div>
-                        <div class="ticket-description">Inclui tour guiado e alimentação dos peixes</div>
-                    </div>
-                </div>
-                
-                <div class="date-selector">
-                    <label for="visit-date">Selecione a data da visita:</label>
-                    <input type="date" id="visit-date">
-                </div>
-                
-                <button class="purchase-btn" onclick="purchaseTickets()">Comprar Ingressos</button>
-            </div>
+<br></br>
+    <div class="container">
+        <div class="main-content">
+            <h3>A melhor vista do mar</h3>
             
-            <div class="sidebar">
-                <h3>DREAMLAND</h3>
-                <p>Viva a experiência completa no maior aquário da América do Sul!</p>
+            <div class="ticket-section">
+                <h3>Ingresso AquaRio</h3>
                 
-                <div class="highlight-box">
-                    <p>9º novembro de 2014</p>
-                    <p>Experiência Completa • GEX (Globo Experienced)</p>
+                <div class="ticket-option" onclick="selectTicket(this)">
+                    <div class="ticket-title">Ingresso Individual</div>
+                    <div class="ticket-price">R$ 80,00</div>
+                    <div class="ticket-desc">Acesso a todas as áreas do aquário</div>
                 </div>
+                
+                <div class="ticket-option" onclick="selectTicket(this)">
+                    <div class="ticket-title">Ingresso Família (4 pessoas)</div>
+                    <div class="ticket-price">R$ 240,00</div>
+                    <div class="ticket-desc">Economize com o pacote família</div>
+                </div>
+                
+                <div class="ticket-option" onclick="selectTicket(this)">
+                    <div class="ticket-title">Experiência Premium</div>
+                    <div class="ticket-price">R$ 150,00</div>
+                    <div class="ticket-desc">Inclui tour guiado e alimentação dos peixes</div>
+                </div>
+            </div>
+
+            <div class="date-selector">
+                <label>Selecione a data da visita:</label>
+                <input type="date" id="visit-date">
+            </div>
+
+            <button class="buy-btn" onclick="purchaseTickets()">Comprar Ingressos</button>
+        </div>
+
+        <div class="sidebar">
+            <h3>DREAMLAND</h3>
+            <p>Viva a experiência completa no maior aquário da América do Sul!</p>
+            <div class="highlight">
+                <p>9º novembro de 2014</p>
+                <p>Experiência Completa • GEX</p>
             </div>
         </div>
-        
-        <div class="experience-section">
-            <div class="experience-title">VIVA A EXPERIÊNCIA COMPLETA</div>
-            <div class="experience-subtitle">Descubra o mundo marinho como nunca antes</div>
-            
-            <div class="partners">
-                <div class="partner-logo">DREAMLAND</div>
-                <div class="partner-logo">Megamos</div>
-                <div class="partner-logo">GEX</div>
-            </div>
-        </div>
-        
-        <footer>
-            <p>AquaRio - O melhor vista do mar | Contato: (21) 9999-9999</p>
-        </footer>
     </div>
+
+    <div class="experience">
+        <div class="exp-title">VIVA A EXPERIÊNCIA COMPLETA</div>
+        <div class="exp-subtitle">Descubra o mundo marinho como nunca antes</div>
+        <div class="partners">
+            <span>DREAMLAND</span>
+            <span>Megamos</span>
+            <span>GEX</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>AquaRio - O melhor vista do mar | Contato: (21) 9999-9999</p>
+    </footer>
 
     <script src="ingressos.js"></script>
 </body>
