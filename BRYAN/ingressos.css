@@ -28,13 +28,7 @@ body {
     color: #a3d8f4 !important;
 }
 
-.logo {
-    width: 250px;
-    height: 250px;
-    cursor: grab;
-    position: absolute;
-    margin-top: -90px;
-}
+
 
 .container {
     display: flex;
