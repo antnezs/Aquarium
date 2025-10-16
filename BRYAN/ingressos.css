@@ -9,38 +9,31 @@ body {
     color: #003366;
     font-family: sans-serif;
 }
-<<<<<<< HEAD
-=======
+
 .navbar {
     min-height: 90px !important;
-    padding: 10px 20px ; 
+    padding: 10px 20px; 
 }
-.navbar.bg-black{
-background-color: #0096ff82 !important;
+
+.navbar.bg-black {
+    background-color: #0096ff82 !important;
 }
->>>>>>> 35c8b7608b3715cc5c7b1b3effeb45aec6227243
+
 .navbar-nav .nav-link {
     color: #1a3c6d !important;
     transition: color 0.3s;
 }
+
 .navbar-nav .nav-link:hover {
     color: #a3d8f4 !important;
 }
 
 .logo {
-<<<<<<< HEAD
-    width: 200px;
-    height: 150px;
-    cursor: grab;
-    position: absolute;
-    margin-top: -40px;
-=======
     width: 250px;
     height: 250px;
     cursor: grab;
     position: absolute;
     margin-top: -90px;
->>>>>>> 35c8b7608b3715cc5c7b1b3effeb45aec6227243
 }
 
 .container {
