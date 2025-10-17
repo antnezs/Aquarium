@@ -149,3 +149,44 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+/*modal*/
+
+.ticket-option {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.ticket-option:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ticket-option.selected {
+    border-color: #007bff;
+    background-color: #e7f3ff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.ticket-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.ticket-price {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+.ticket-desc {
+    color: #6c757d;
+    font-size: 0.9em;
+}

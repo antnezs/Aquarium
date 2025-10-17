@@ -65,10 +65,16 @@
                 <div class="ticket-option" onclick="selectTicket(this)">
                     <div class="ticket-title">Experiência Premium</div>
                     <div class="ticket-price">R$ 150,00</div>
-                    <div class="ticket-desc">Inclui tour guiado e alimentação dos peixes</div>
+                    <div class="ticket-desc">Inclui tour guiado e acesso a áreas exclusivas.</div>
                 </div>
             </div>
 
+            <div class="ticket-option" onclick="selectTicket(this)">
+                <div class="ticket-title">Experiência Premium Família (4 pessoas)</div>
+                <div class="ticket-price">R$ 450,00</div>
+                <div class="ticket-desc">Inclui tour guiado, acesso a áreas exclusivas, e economia com o pacote família.</div>
+            </div>
+            
             <div class="date-selector">
                 <label>Selecione a data da visita:</label>
                 <input type="date" id="visit-date">
@@ -91,10 +97,66 @@
         <div class="exp-title">VIVA A EXPERIÊNCIA COMPLETA</div>
         <div class="exp-subtitle">Descubra o mundo marinho como nunca antes.</div>
     </div>
-
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">Detalhes do Ingresso</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="modal-ticket-info" class="mb-4">
+            <!-- Informações do ingresso serão inseridas aqui via JavaScript -->
+            <h4 id="modal-ticket-title"></h4>
+            <p class="text-success fw-bold fs-5" id="modal-ticket-price"></p>
+            <p id="modal-ticket-desc" class="text-muted"></p>
+          </div>
+          
+          <div class="container-fluid">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="visit-date" class="form-label">Data da Visita:</label>
+                <input type="date" id="visit-date" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label for="ticket-quantity" class="form-label">Quantidade:</label>
+                <select id="ticket-quantity" class="form-select">
+                  <option value="1">1 ingresso</option>
+                  <option value="2">2 ingressos</option>
+                  <option value="3">3 ingressos</option>
+                  <option value="4">4 ingressos</option>
+                  <option value="5">5 ingressos</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <div class="alert alert-info">
+                  <small>
+                    <strong>Informações importantes:</strong><br>
+                    - Horário de funcionamento: 9h às 18h<br>
+                    - Crianças até 5 anos não pagam<br>
+                    - Estudantes e idosos têm 50% de desconto (documentação necessária)
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <footer>
         <p>Aqualugas - A melhor vista do mar | Contato: (41) 9999-9999</p>
     </footer>
+    
     <script src="ingressos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

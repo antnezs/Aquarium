@@ -73,3 +73,80 @@ function initLogoDrag() {
         logo.style.cursor = 'grab';
     }
 }
+// Variável global para armazenar o ingresso selecionado
+let ingressoSelecionado = null;
+
+function selectTicket(element) {
+    // Remove a classe 'selected' de todos os tickets
+    document.querySelectorAll('.ticket-option').forEach(ticket => {
+        ticket.classList.remove('selected');
+    });
+    
+    // Adiciona a classe 'selected' ao ticket clicado
+    element.classList.add('selected');
+    
+    // Armazena os dados do ingresso selecionado
+    ingressoSelecionado = {
+        titulo: element.querySelector('.ticket-title').textContent,
+        preco: element.querySelector('.ticket-price').textContent,
+        descricao: element.querySelector('.ticket-desc').textContent
+    };
+    
+    // Abre o modal
+    abrirModal();
+}
+
+function abrirModal() {
+    if (ingressoSelecionado) {
+        // Preenche as informações no modal
+        document.getElementById('modal-ticket-title').textContent = ingressoSelecionado.titulo;
+        document.getElementById('modal-ticket-price').textContent = ingressoSelecionado.preco;
+        document.getElementById('modal-ticket-desc').textContent = ingressoSelecionado.descricao;
+        
+        // Abre o modal usando Bootstrap
+        const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+        myModal.show();
+    }
+}
+
+function finalizarCompra() {
+    const dataSelecionada = document.getElementById('visit-date').value;
+    const quantidade = document.getElementById('ticket-quantity').value;
+    
+    if (!dataSelecionada) {
+        alert('Por favor, selecione uma data para a visita.');
+        return;
+    }
+    
+    if (ingressoSelecionado) {
+        // Formata a data para exibição
+        const dataFormatada = new Date(dataSelecionada).toLocaleDateString('pt-BR');
+        
+        alert(`🎉 Compra realizada com sucesso!\n\n📄 Ingresso: ${ingressoSelecionado.titulo}\n📅 Data: ${dataFormatada}\n🎫 Quantidade: ${quantidade}\n💰 ${ingressoSelecionado.preco}\n\nObrigado pela preferência!`);
+        
+        // Fecha o modal
+        const myModal = bootstrap.Modal.getInstance(document.getElementById('myModal'));
+        myModal.hide();
+        
+        // Limpa a seleção
+        ingressoSelecionado = null;
+        document.querySelectorAll('.ticket-option').forEach(ticket => {
+            ticket.classList.remove('selected');
+        });
+        
+        // Limpa os campos
+        document.getElementById('visit-date').value = '';
+        document.getElementById('ticket-quantity').value = '1';
+    }
+}
+
+// Event listener para quando o modal abrir
+document.addEventListener('DOMContentLoaded', function() {
+    const myModal = document.getElementById('myModal');
+    if (myModal) {
+        myModal.addEventListener('shown.bs.modal', function () {
+            // Foca no campo de data quando o modal abrir
+            document.getElementById('visit-date').focus();
+        });
+    }
+});
